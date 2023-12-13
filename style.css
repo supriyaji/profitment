@@ -1,0 +1,905 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Alegreya Sans', sans-serif;
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Paytone One', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Titillium Web', sans-serif; */
+}
+
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgb(0, 77, 77,0.6),rgb(0, 77, 77,0.6)),url("bacground3.jfif"); 
+    /* clip-path: polygon(50% 0%, 100% 0, 100% 43%, 100% 81%, 68% 100%, 32% 100%, 0 81%, 0% 43%, 0 0); */
+    clip-path: polygon(50% 0%, 100% 0, 100% 43%, 100% 79%, 68% 100%, 32% 100%, 0 79%, 0% 43%, 0 0);
+    /* clip-path: inset(8% 5% 15% 5%);  */
+    background-size: cover;
+ }
+section .content{
+    max-width: 1000px;
+    text-align: center;
+    /* clip-path: inset(8% 5% 15% 5%); */
+ }
+section .content h6{
+    font-size: 3em;
+    color: #fff;
+    font-weight: 700;
+    /* text-shadow: 4px 4px #1b1b1b; */
+    text-shadow: 3px 7px 8px #000000;
+}
+section .content p{
+    font-size: 1em;
+    color: #fff;
+    font-weight: 700;
+    /* text-shadow: 4px 4px #1a1a1a; */
+    text-shadow: 3px 7px 8px #000000;
+}
+ /* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+.half{
+    background: rgba(0, 0, 0,0.6 );
+}
+.bt{
+    /* border: 1px solid #ffffff; */
+    border: 2px solid #900d09;
+    padding: 1.6rem 4.2rem;
+    padding: 10px 10px;
+    color:var(--white);
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: #ffffff;
+    /* background-color: #F1B814; */
+    text-decoration: none;
+}
+.bt:hover,
+.bt:active{
+    box-shadow: 0 2rem 2rem 0 rgba(10, 10, 11, 0.3);
+    color:white;
+    background-color:transparent;
+    text-decoration: none;
+}
+.bts{
+  /* border: 1px solid #ffffff; */
+  border: 1px solid transparent;
+  padding: 1.6rem 4.2rem;
+  padding: 10px 10px;
+  background-color: #900d09;
+/* background: white; */
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  /* color: #000000; */
+  color: white;
+  /* background-color: #F1B814; */
+  text-decoration: none;
+}
+
+.logo{
+    width: 270px;
+    height: 70px;
+    background: rgb(0, 0, 0);
+    margin-bottom: -60px;
+    /* clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%); */
+    clip-path: polygon(0 0, 100% 0, 80% 100%, 20% 100%);
+    /* clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: white;
+}
+
+
+/* ===========================================SIDENAV CODE HALF AT HTML PAGE HALF HERE */
+
+.sidenav{
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 4;
+    overflow-x: hidden;
+    padding-top: 70px;
+    margin-top: 95px;
+    transition: all 0.5s;
+  }
+
+  .sidenav a{
+    text-decoration: none;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    display: block;
+    padding: 20px 20px;
+  }
+  
+  .sidenav a:hover{
+    color: rgba(0, 0, 0, 0.9);
+    background: rgba(255, 255, 255, 0.9);
+    transition: 0.4S;
+  
+  }
+  .closebtn{
+    background-color: black;
+    display: block;
+    padding-top: 100px;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    font-size: 15px!important;
+  
+  }
+
+/* =================================================cut out card code */
+  .wrapper {
+    position: relative;
+    perspective: 40em;
+    display: grid;
+    transform-style: preserve-3d;
+  }
+  
+  .card {
+    grid-area: 1 / 1;
+    height: 160px!important;
+    width: 560px;
+    transform: translateX(10px) rotateY(25deg) rotateX(10deg);
+    background-color: rgb(0, 77, 77,0.9);
+    /* background: rgba(249, 198, 26, 0.88); */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 110px;
+    font-weight: 900;
+    backface-visibility: hidden;
+    box-shadow: 0 10px 30px -3px rgba(0,0,0,.1);
+    text-transform: capitalize;
+  }
+  
+  h1 {
+    font-size: 20px;
+    font-weight: 900;
+  }
+  .card p{
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .card .enclosed {
+    background: #000;
+    line-height: 1;
+ /* color: rgb(0, 77, 77,0.1); */
+    /* color: rgba(249, 198, 26, 1); */
+    color: white;
+    padding: 0 5px;
+    display: inline-block;
+    transform: translate(-1px, 1px) scale(0.75);
+    transform-origin: right center;
+  }
+  
+  .wrapper:before {
+    --bw: 1px;
+    grid-area: 1 / 1;
+    content: '';
+    backface-visibility: hidden;
+    height: 100%;
+    width: 100%;
+    margin-top: calc(-1 * var(--bw));
+    margin-left: calc(-1 * var(--bw));
+    background: transparent;
+    transform: translateX(-60px) rotateY(-30deg) rotateX(15deg) scale(1.03);
+    pointer-events: none;
+    border: var(--bw) solid #000;
+    box-sizing: content-box;
+  }
+  
+  /* CARD CODE */
+  
+  .wrapper:hover > div,
+  .wrapper:hover:before {
+    transform: none;
+  }
+  
+  
+  .wrapper > div,
+  .wrapper:before {
+    will-change: transform;
+    transition: .3s transform cubic-bezier(.25,.46,.45,1);
+  }
+  
+  .crd {
+    width: 100%;
+    height: 50vh;
+    display: grid;
+    place-items: center;
+  }
+
+  /* ======================================STICKY ICON CODE =============================*/
+.icon-bar{
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.icon-bar a{
+  text-decoration: none;
+  width: 210;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  font-size: 20px;
+  transform: translateX(-190px);
+  transition: all 0.5s linear;
+}
+.icon-bar a i{
+  padding-left: 20px;
+  font-size: 30px ;
+  animation: letszoom 3s linear alternate-reverse infinite;
+}
+
+@keyframes letszoom{
+  from{
+    transform: scale(0.8);
+  }
+  to{
+    transform: scale(1);
+  }
+}
+a:hover{
+  transform: translateX(0);
+}
+.facebook{
+  background: #3b5999;
+}
+.instagram{
+  background: #e4405f;
+}
+.twitter{
+  background: #00eced;
+}
+.youtube{
+  background: #cd201f;
+}
+.linkedin{
+  background: #007785;
+}
+/*================================================== SECTION HEADING ===================================*/
+
+.heding{
+  text-transform: capitalize;
+  position: relative;
+}
+.heding::before{
+  content: "";
+  position: absolute;
+  top: 99%;
+  left: 0;
+  border-radius: 50%;
+  width: 0.6rem;
+  height: 0.6rem;
+  background-color: rgb(0, 77, 77,0.9);
+}
+.heding::after{
+  content: "";
+  position: absolute;
+  top: 106%;
+  left: 0.6rem;
+ min-width: 12rem;
+ height: 0.1rem;
+ background-color: rgb(0, 77, 77,0.9);
+}
+
+/*====================== SCROLL-TOP CSS =======================*/
+.scrollTop-style{
+  position: fixed;
+  right: 4%;
+  bottom: 5%;
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+}
+.scroll-top{
+  /* width: 3.5rem;
+  height: 3.5rem; */
+  width: 4rem;
+  height: 4rem;
+  background-color: rgb(0, 77, 77,0.9);
+  display: inline-block;
+  padding: 1.4rem 1.6rem;
+  color: rgb(255, 255, 255);  
+  animation: water-wave 3s linear infinite;
+  cursor: pointer;
+}
+.scroll-top i{
+  width: 50%;
+}
+
+/* =============================================BANER SECTION CSS CODE =======================*/
+
+.baner{
+  width: 100%;
+  height: 240px;
+  padding: 60px 0px 60px 250px;
+  background: #082053;
+  color: white; 
+  margin: 0px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+  position: relative;
+  transition: all 0.7s linear;
+  text-align: center;
+  background-image: linear-gradient(rgb(0, 77, 77,0.6),rgb(0, 77, 77,0.6)),url("bacground3.jfif");
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.verticalbaner{
+  text-transform: capitalize;
+  position: absolute;
+  top: -100px;
+  left: 230px;
+  width: 20%;
+  height: 400px;
+  color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(15, 14, 14, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.banersection{
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.btb{
+  /* border: 1px solid #ffffff; */
+  border: 1px solid transparent;
+  padding: 0.6rem 4.2rem;
+  /* padding: 10px 10px; */
+  color:var(--white);
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 1.0rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  color: #ffffff;
+  background-color: #900d09;
+  /* background-color: #F1B814; */
+  text-decoration: none;
+}
+.btb:hover,
+.btb:active{
+  box-shadow: 0 2rem 2rem 0 rgba(10, 10, 11, 0.3);
+  color:white;
+  background-color:transparent;
+  text-decoration: none;
+}
+
+/*=================================================== SERVICE SECTIONM CODE================== */
+
+.service-section{
+  padding: 50px 0px;
+  margin-bottom: 90px;
+}
+.service-section .service-column{
+  /* width: 23.333333; */
+  padding: 0 15px;
+}
+.single-service{
+  position: relative;
+  margin-top: 30px;
+  border-radius: 0px;
+  padding: 20px 5px;
+  /* box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5); */
+  border-left: 0.1px solid black;
+  border-bottom: 0.1px solid black;
+  overflow: hidden;
+  text-align: center;
+}
+.single-service .content{
+  position: relative;
+  z-index: 20;
+}
+.service-section .service-column .single-service .content .icon{
+  display: inline-block;
+  margin-bottom: 25px;
+  width: 60px;
+  height: 60px;
+  background-color: rgb(0, 77, 77,0.9);
+
+  border-radius: 5px;
+  line-height: 60px;
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+  transition: all 0.5s;
+}
+ .main-title{
+
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 15px;
+  color: #000000;
+  transition: color 0.3s;
+}
+
+.description{
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #838383;
+  transition: color 0.3s;
+}
+.learn-more{
+    color: #900d09;
+  text-decoration: none;
+  font-size: 14px;
+  position: relative;
+  font-weight: 500;
+  transition: color .3s;
+}
+.learn-more::after{
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #000000;
+  transition: background-color .3s;
+}
+.circle-before{
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(40%,-40%);
+  width: 0px;
+  height: 0px;
+  background-color: rgba(0, 63, 63, 0.9);
+  border-radius: 50%;
+  transition: all 0.6s;
+}
+.single-service:hover .circle-before{
+  width: 100%;
+  height: 100%;
+  transform: none;
+  border: 0;
+  border-radius: 0;
+  opacity: 0.8;
+}
+.service-section .service-column .single-service:hover .icon{
+  background-color: #fff;
+  color: #1c2466;
+  border-radius: 50px;
+  transition: all 0.55;
+}
+.single-service:hover .description{
+  color: #fff;
+
+}
+.single-service:hover .main-title{
+  color: #fff;
+
+}
+.single-service:hover .learn-more{
+  color: #fff;
+
+}
+.single-service:hover .learn-more::after{
+  background-color: #fff;
+} 
+
+/* ============================================CONTACT SECTION FIRST PART CODE========================= */
+
+.contactinfo{
+  width: 500px;
+  height: 400px;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+  padding: 20px 50px;
+  background-attachment: fixed;
+  background-position: center;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  box-shadow: 0 50px 50px rgba(0, 0, 0, 0.25);
+  background-image: linear-gradient(rgb(0, 77, 77,0.6),rgb(0, 77, 77,0.6)),url("bacground3.jfif");
+
+  color: white;
+}
+
+
+/* ======================================================CONBTACT US RIGHT PART SECTION CSS======================== */
+
+.containercontact{
+  width: 100%;
+  padding: 20px;    
+}
+.containercontact h2{
+  width: 100%;
+  color: #4561ff;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.containercontact .row100{
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+}
+.containercontact .row100 .col{
+  position: relative;
+  width: 100%;
+  padding: 0 10px;
+  margin: 30px 0 10px;
+  transition: 0.5s;
+}
+
+.containercontact .row100 .inputBox{
+  position: relative;
+  width: 100%;
+  height: 40px;
+  color: #000000;
+  
+}
+.containercontact .row100 .inputBox.textarea textarea,
+.containercontact .row100 .inputBox input{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  padding: 0 10px;
+  z-index: 1;
+  color: rgb(255, 255, 255);
+
+}
+.containercontact .row100 .inputBox .text{
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 40px;
+  font-size: 18px;
+  padding: 0 10px;
+  display: block;
+  transition: 0.5s;
+  pointer-events: none;
+}
+.containercontact .row100 .inputBox input:focus+.text,
+.containercontact .row100 .inputBox input:valid+ .text{
+  top: -35px;
+  left: -10px;
+}
+.containercontact .row100 .inputBox .line{
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: rgb(0, 77, 77,0.9);
+  transition: 0.5s;
+  border-radius: 2px;
+  pointer-events: none;    
+}
+.containercontact .row100 .inputBox input:focus~.line,
+.container .row100 .inputBox input:valid~.line{
+  height: 100%;
+}
+.containercontact .row100 .inputBox .textarea{
+  position: relative;
+  height: 100px;
+  width: 100%;
+  padding: 10px 0;
+}
+.containercontact .row100 .inputBox.textarea textarea{
+  height: 100%;
+  resize: none;
+}
+.containercontact .row100 .inputBox textarea:focus+.text,
+.containercontact .row100 .inputBox textarea:valid+.text{
+  top: -35px;
+  left: -10px;
+}
+.containercontact .row100 .inputBox textarea:focus~.line,
+.containercontact .row100 .inputBox textarea:valid~.line{
+  height: 100%;
+}
+input[type="submit"]{
+  margin-top: 20px;
+  border: none;
+  padding: 7px 35px;
+  cursor: pointer;
+  outline: none;
+  background-color: #900d09;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  border-radius: 2px;
+} 
+
+/*============================================= FOOTER SECTION CSS CODE */
+
+.fosection{
+  height: 27vh;
+  width: 100%;
+  background-color: #e4e3e3;
+}
+.ftr{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 400;
+  padding: 50px 50px 20px 50px;
+  color: black;
+}
+.ftr span a{ 
+  color: rgb(89, 110, 180);
+}
+.ftr a{
+  color: black;
+  text-decoration: none;
+}
+.copyrightline{
+  padding-top: 10px;
+  text-align: center;
+  margin-bottom: 0px;
+  color: rgb(0, 0, 0);
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.fsection{
+    width: 100%;
+    background-color: white;
+    height: 70vh;
+}
+
+  @media(max-width:700px) and (min-width:300px){
+    .borderr img{
+        width: 350px;
+      }
+    .information img{
+      width: 60px;
+    }
+  .information{
+    width: 100%;
+    height: 130vh!important;
+  }
+  .logo{
+    width: 200px;
+    height: 50px;
+    font-size: 20px;   
+}
+.nav-item{
+  text-align: center!important;
+  font-weight: 400;
+}
+.navbar-nav{
+  margin-top: 40px!important;
+}
+section .content h6{
+  font-size: 1.5em;
+  font-weight: 500;
+}
+section .content p{
+  font-size: 1em;
+  font-weight: 400;
+}
+.bt{
+  font-size: 1rem;
+  font-weight: 400;
+}
+.bts{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.icon-bar a{
+  width: 218px;
+  padding: 3px;
+}
+.left1{
+  height: 400px;
+  width: 100%;
+}
+.left1 img{
+  width: 300px;
+  box-shadow: 2rem -2rem 0 0 rgba(1, 25, 56, 0.9);
+}
+#about{
+  width: 100%;
+  height: 100vh;
+}
+.card {
+  height: 220px!important;
+  width: 360px;
+}
+.baner{
+  height: 580px;
+  padding-top: 20px;
+  padding: 60px 0px 80px 20px;
+}
+
+.verticalbaner{
+  width: 98%;
+ top:190px;
+  left: 0px;
+  text-transform: capitalize;
+  position: absolute;
+  height: 400px;
+  color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(15, 14, 14, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.banersection{
+  height: 100vh;
+}
+.contactinfo{
+  width: 350px;
+  height: 400px;
+  padding: 10px 50px;
+  margin-top: 20px; 
+  margin:20px auto 0px auto ;
+}
+.containercontact{
+  width: 80%;
+  padding: 20px;    
+}
+
+.fsection{
+  margin-top: 60px;
+  height: 130vh;
+}
+.fosection{
+    margin-top: 60px;
+    height: 55vh;
+  }
+.ftr{
+  flex-direction: column;
+}
+.ftr a{
+  padding-bottom: 10px;
+}
+
+.service-section{
+  padding: 50px 0px;
+  margin-bottom: 50px;
+}
+.service{
+    width: 100%;
+    height: 100vh;
+}
+
+}
+@media(max-width:850px) and (min-width:700px){
+    .borderr img{
+        width: 320px;
+      }
+ .information .icon-arrow{
+      width: 14%;   
+    }
+  .information{
+    width: 100%;
+    height: 80vh!important;
+  }
+  .logo{
+    width: 270px;
+    height: 70px;
+    font-size: 27px;   
+}
+.nav-item{
+  text-align: center!important;
+  font-weight: 400;
+}
+.navbar-nav{
+  margin-top: 40px!important;
+}
+
+section{
+  margin-top: 30px!important;
+ }
+ #about{
+  width: 100%;
+  height: 50vh;
+ 
+}
+.left1 img{
+  width: 300px;
+  box-shadow: 2rem -2rem 0 0 rgba(1, 25, 56, 0.9);
+}
+.crd {
+  height: 26vh;
+}
+.banersection {
+  height: 40vh;
+}
+.verticalbaner{
+  left: 30px;
+  width: 30%;
+}
+.baner h2{
+  font-size: 25px;
+}
+.contactinfo{
+  width: 340px;
+  height: 390px;
+}
+
+.fsection{
+    margin-top: 60px;
+    height: 40vh;
+  }
+.fosection{
+  margin-top: 60px;
+  height: 22vh;
+}
+.ftr{
+  flex-direction: row;
+}
+.ftr a{
+  padding-bottom: 10px;
+}
+.service-section{
+  margin-bottom: 90px;
+}
+}
+
+
+  .list{
+    opacity: 7;
+    height: 350px;
+    padding: 20px 50px;
+    background-attachment: fixed;
+    background-position: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+  }
+  .block{
+    /* text-transform: uppercase; */
+    width: 100%;
+    height: 400px;
+  }
+  .block ul{
+    list-style-type: square;
+  }
+

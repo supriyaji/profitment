@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EndGame</title>
+
+<!-- AOS LINK -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+<!-- FONT AWESOME LINK -->
+<script src="https://kit.fontawesome.com/f3f83a3079.js" crossorigin="anonymous"></script>
+
+<!-- CSS LINKS -->
+<link rel="stylesheet" href="style.css">
+
+<!-- GOOGLE FONT LINK -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,500;1,300;1,400&family=Montserrat:wght@900&family=Paytone+One&family=Poppins:ital,wght@0,100;0,200;0,500;0,700;1,200;1,500;1,600;1,700&family=Titillium+Web:ital,wght@0,300;0,400;0,600;1,200&display=swap"
+    rel="stylesheet">
+
+<!-- bootstrap link -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+
+
+  <!-- <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"> -->
+  <style>
+    .sidenav {
+      padding: 100px 0px;
+      position: fixed;
+      width: 230px;
+      height: 100vh;
+      background-color: rgba(15, 14, 14, 0.3);
+    }
+
+    .sidenav ul li {
+      list-style-type: none;
+    }
+
+    .sidenav ul li a {
+      text-decoration: none;
+      color: rgb(0, 0, 0);
+      font-size: 15px;
+      margin: 10px 30px;
+      display: block;
+      padding: 10px;
+    }
+
+    .nname {
+      font-size: 24px !important;
+      letter-spacing: 5px;
+      color: white;
+    }
+
+    .navbar-nav {
+      font-size: 20px;
+      font-weight: 500;
+
+      color: white;
+    }
+
+    .navbar::before {
+      content: " ";
+      position: absolute;
+      top: 0%;
+      bottom: 0%;
+      left: 0;
+      right: 0;
+      z-index: -1;
+      background-color: rgba(15, 14, 14, 0.3);
+      ;
+    }
+
+    .nav {
+      background: #f9b807;
+    }
+
+    .nav-link {
+
+      color: white;
+    }
+
+    .facebook {
+      background: #3b5999;
+    }
+
+    .instagram {
+      background: #e4405f;
+    }
+
+    i .twitter {
+      background: #00eced;
+    }
+
+    .youtube {
+      background: #cd201f;
+    }
+
+    .linkedin {
+      background: #007785;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- NAVBAR SECTION -->
+
+<nav class="navbar navbar-expand-lg navbar-dark  fixed-top">
+    <div class="container p-3">
+      <span class="logo">PROFITMENT</span>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">ABOUT US</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#service">SERVICE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">CONTACT US</a>
+          </li>
+          <li class="nav-item">
+            <div> <a class="nav-link" href="#"><span class="" onClick="openNav()"> OPEN TAB</span></div></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav> 
+
+  <!--================================ MAIN CONTAINER -->
+
+ <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="content">
+            <h6> WELCOME TO PROFITMENT </h6>
+            <p> WHERE DREAMS COME TRUE</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita nihil pariatur, autem ipsam facilis enim?</p>
+            <a href="" class="bt">CONNECT TO US NOW</a>&nbsp;&nbsp;&nbsp;
+            <a href="" class="bts">CONNECT TO US NOW</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> 
+
+  <!-- ===========================================STICKY ICON CODE -->
+
+  <div class="icon-bar">
+    <a href="#" class="facebook" target="_blank">CLICK HERE TO VISIT <i class="fa-brands fa-square-facebook"></i></a>
+    <a href="#" class="instagram" target="_blank">CLICK HERE TO VISIT <i class="fab fa-instagram-square"></i></a>
+    <a href="#" class="twitter" target="_blank">CLICK HERE TO VISIT <i class="fab fa-twitter-square"></i></a>
+    <a href="#" class="youtube" target="_blank">CLICK HERE TO VISIT <i class="fab fa-youtube-square"></i></a>
+    <a href="#" class="linkedin" target="_blank">CLICK HERE TO VISIT <i class="fa-brands fa-linkedin"></i></a>
+  </div>
+
+  <!-- ===========================================SIDE BAR CODE  -->
+  <span class="sidenavbg">
+    <div class="sidenav" id="mysidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">CLIC HERE TO CLOSE THE TAB</a>
+      <a href="#"> <i class="fa-solid fa-bars-staggered"></i>&nbsp;&nbsp; OVERVIEW</a>
+      <a href="#"><i class="fa-solid fa-code-branch"></i>&nbsp;&nbsp;BRANCH</a>
+      <a href="#"> <i class="fa-solid fa-person-chalkboard"></i>&nbsp;&nbsp;CUSTOMER</a>
+      <a href="#"><i class="fa-solid fa-building"></i>&nbsp;&nbsp;COMPANY</a>
+      <a href="#"> <i class="fa-solid fa-comment"></i>&nbsp;&nbsp;ADVISE</a>
+    </div>
+  </span>
+
+  <!--================================================= CUT OUT CARD -->
+ <div class="container" id="about">
+    <div class="row">
+      <div class="col-lg-6 col-md-12 col-12 right1">
+        <div class="crd">
+          <div class="wrapper">
+            <div class="card">
+              <h1>
+                <span class="enclosed">About</span>Profitment
+              </h1>
+              <p>Profitment has carved a niche in the Advisory sector due to its rich heritage, integrity, adherence to
+                prudent practices, technology advancement,</p>          
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-12 col-12 ab">
+        <div class="crd">
+          <div class="wrapper">
+            <div class="card">
+              <h1>
+                <span class="enclosed">Choose</span>Us
+              </h1>
+              <p>Our service gives you better result and savings, as per your requirement and you can manage your
+                investments from anywhere either form home or work place,any time.</p>             
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--============================================ BANNER SECTION -->
+ <div class="banersection">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12 COL-MD-12">
+          <div class="baner">
+            <h3>OUR MISSION IS TO HELP OUR USER <br>
+              TO MAXIMIZE MONEY</h3>
+      
+            <a href="#" class="btb">JOIN US NOW</a>
+            <div class="verticalbaner" data-aos="">
+              <img src="bacground3.jfif" width="200px">
+              <h3 class="pt-3">HAVE ANY QUERY </h3>
+              <P>Get In Touch With Us.</P>
+              <a href="#" class="bt">JOIN US NOW</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+
+<!-- OUR FEATURES  -->
+<div class="fsection">
+ <div class="container block features">
+    <h4 style="font-weight: 900; " class="pb-1 mb-5 heding">OUR FEATURES</h4>
+    <div class="row">     
+      <div class="col-lg-3 col-md-3 ">
+        <ul >
+          <li>
+            <h3>SIMPLICITY</h3>
+            <p>We’re eliminating complex user experiences.</p>          
+          </li>
+          <li>
+            <h3>SECURITY</h3>
+            <p>Enhanced security features like multi-factor.</p>          
+          </li>
+          <li>
+            <h3>SUPPORT</h3>
+            <p>Get all the support you need for your Investment</p>           
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-3">
+        <ul>
+          <li>
+            <h3>Experienced Tips</h3>
+            <p>We’re very skilled community having 15+ years of experience.</p>          
+          </li>
+          <li>
+            <h3>Personal Consulting</h3>
+            <p>We’re eliminating complex user experiences.</p>          
+          </li>
+          <li>
+            <h3>Fast Profit</h3>
+            <p>We're talking about ways you can make money fast.</p>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-6 col-md-6 col-12 list"  data-aos="">
+        <div class="borderr">
+        <img src="side.jfif" class="pic1" width="400px">
+        </div>
+      </div>
+    </div>
+  </div>
+  </div> 
+
+
+  <!-- =============================================================SERVICE PAGE -->
+
+ <div class="service-section" id="service">
+    <div class="container">
+      <h4 style="font-weight: 900;" class="pb-4 heding">SERVICES WE PROVIDE</h4>
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-12">
+          <div class="service-column">
+            <div class="single-service">
+              <div class="content">
+                <h3 class="main-title">Start Investing</h3>
+                <p class="description">Get Tips and Start Investing</p>
+                <a href="#" class="learn-more">READ MORE</a>
+              </div>
+              <span class="circle-before"></span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-12">
+          <div class="service-column">
+            <div class="single-service">
+              <div class="content">
+                <h3 class="main-title">Connect to us</h3>
+                <p class="description">Join our community in a click</p>
+                <a href="#" class="learn-more">READ MORE</a>
+              </div>
+              <span class="circle-before"></span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-12">
+          <div class="service-column">
+            <div class="single-service">
+              <div class="content">
+                <h3 class="main-title">Consultation</h3>
+                <p class="description">P2P session with our executive</p>
+                <a href="#" class="learn-more">READ MORE</a>
+              </div>
+              <span class="circle-before"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-12">
+          <div class="service-column">
+            <div class="single-service">
+              <div class="content">
+                <h3 class="main-title">Equity Intraday</h3>
+                <p class="description">Get High accuracy Equity Intraday trades with proper Targets and SL</p>
+                <a href="#" class="learn-more">READ MORE</a>
+              </div>
+              <span class="circle-before"></span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-12">
+          <div class="service-column">
+            <div class="single-service">
+              <div class="content">
+                <h3 class="main-title">Stock Options</h3>
+                <p class="description">Get Daily 2-3 Stock Options recommendations from our experts</p>
+                <a href="#" class="learn-more">READ MORE</a>
+              </div>
+              <span class="circle-before"></span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-12">
+          <div class="service-column">
+            <div class="single-service">
+              <div class="content">
+                <h3 class="main-title">Index Option</h3>
+                <p class="description">Get daily expert recommandations of Nifty and Bank Nifty option levels</p>
+                <a href="#" class="learn-more">READ MORE</a>
+              </div>
+              <span class="circle-before"></span>
+            </div>
+          </div>
+        </div>
+      </div>   
+    </div>
+  </div>
+  <!-- ============================================CONTACT SECTION -->
+
+ <div class="contactsection" id="contact">
+    <div class="container">
+      <div class="row">
+        <h4 style="font-weight: 900;" class="pb-4 heding">CONNECT WITH US</h4>
+        <div class="col-lg-6 col-md-6 col-12" data-aos="flip-right">
+          <div class="contactinfo">
+            <i class="fa fa-2x fa-phone icn"></i>
+            <p class="pt-0">0987654321 <br> 0987654321</p>
+            <i class="fa fa-2x fa-envelope icn pt-0"></i>
+            <p class="pt-0">yadav.supriya858@gmail.com</p>
+            <i class="fa fa-2x fa-location-dot icn pt-0"></i>
+            <p class="pt-0">Masterkey venture , laxmi distributor pandri raipur</p>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-12  " data-aos="flip-down">
+          <div class="containercontact">
+            <div class="row100">
+              <div class="col">
+                <DIV class="inputBox">
+                  <input type="text" name="nm" required="required">
+                  <span class="text">ENTER YOUR FULL NAME</span>
+                  <span class="line"></span>
+                </DIV>
+              </div>
+            </div>
+            <div class="row100">
+              <div class="col">
+                <DIV class="inputBox">
+                  <input type="text" name="em" required="required">
+                  <span class="text">ENTER YOUR EMAIL ADDRESS</span>
+                  <span class="line"></span>
+                </DIV>
+              </div>
+            </div>
+            <div class="row100">
+              <div class="col">
+                <DIV class="inputBox">
+                  <input type="text" name="cn" required="required">
+                  <span class="text">ENTER YOUR CONTACT NUMBER</span>
+                  <span class="line"></span>
+                </DIV>
+              </div>
+            </div>
+            <div class="row100">
+              <div class="col">
+                <div class="inputBox textarea">
+                  <textarea required="required" name="ms"></textarea>
+                  <span class="text">TYPE YOUR MESSAGE</span>
+                  <span class="line"></span>
+                </div>
+              </div>
+            </div>
+            <div class="row1000">
+              <div class="col">
+                <input type="submit" name="sub" value="send">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
+
+
+  <!-- -=============================SCROLL ICON -->
+
+  <div class="scrollTop-style">
+    <a href="#"><i class="fa-solid fa-arrow-up  scroll-top"></i></a>
+  </div>
+
+  <!-- =========================================FOOTER SECTION -->
+
+ <div class="container-fluid fosection">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-12">
+        <div class="ftr">
+          <a href="#"><i class="fa-solid fa-house"></i> HOME</a>
+          <a href="#about"><i class="fa-solid fa-user"></i> ABOUT</a>
+          <a href="#contact"><i class="fa-solid fa-address-book"></i> CONTACT</a>
+          <a href="#service"><i class="fa-solid fa-handshake-angle"></i> SERVICE</a>
+          <span><a href="#"><i class="fa-solid fa-phone"></i> 9087654321</a></span>
+        </div>
+        <hr>
+        <div class="col-lg-12 col-md-12 col-12">
+          <p class="copyrightline"><b>Copyright © 2023.All Rights Reserved By Profitment</b></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const openNav = () => {
+      document.getElementById('mysidenav').style.width = "250px"
+    }
+    const closeNav = () => {
+      document.getElementById('mysidenav').style.width = "0px";
+    }
+
+  </script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+  <script>
+    AOS.init({
+      offset: 180,
+      duration: 1000
+    });
+  </script>
+</body>
+
+</html>
